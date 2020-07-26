@@ -1,0 +1,11 @@
+plugin:
+    name: 'arr.maincontent::lang.plugin.name'
+    description: 'arr.maincontent::lang.plugin.description'
+    author: array
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Menu Item'
+        url: arr/maincontent/contr
+        icon: icon-align-justify

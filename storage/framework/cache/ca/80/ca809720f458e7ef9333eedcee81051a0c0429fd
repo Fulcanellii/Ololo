@@ -1,0 +1,22 @@
+1593771669a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:342:"<div id="footer">
+    <div class="container">
+        <hr />
+        <p class="muted credit">&copy; 2013 - {{ "now"|date("Y") }} Pupkin Zalupkin</p>
+        <div class="social_links">
+            <div class="instagram">
+                <i class=" icon-align-justify"></i> icon-camera-retro
+            </div>
+        </div>
+    </div>
+</div>
+";s:5:"mtime";i:1593525677;s:6:"markup";s:341:"<div id="footer">
+    <div class="container">
+        <hr />
+        <p class="muted credit">&copy; 2013 - {{ "now"|date("Y") }} Pupkin Zalupkin</p>
+        <div class="social_links">
+            <div class="instagram">
+                <i class=" icon-align-justify"></i> icon-camera-retro
+            </div>
+        </div>
+    </div>
+</div>";s:4:"code";N;}}

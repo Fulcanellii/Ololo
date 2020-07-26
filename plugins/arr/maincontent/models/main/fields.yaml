@@ -1,0 +1,19 @@
+fields:
+    title:
+        label: Заголовок
+        span: left
+        type: text
+    featured_images:
+        label: 'Главное изображение'
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: right
+        type: fileupload
+    description:
+        label: Описание
+        size: large
+        span: auto
+        type: textarea

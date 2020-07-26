@@ -1,0 +1,10 @@
+name: Contr
+form: $/arr/maincontent/models/main/fields.yaml
+modelClass: Arr\MainContent\Models\Main
+defaultRedirect: arr/maincontent/contr
+create:
+    redirect: 'arr/maincontent/contr/update/:id'
+    redirectClose: arr/maincontent/contr
+update:
+    redirect: arr/maincontent/contr
+    redirectClose: arr/maincontent/contr

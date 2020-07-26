@@ -1,0 +1,116 @@
+1593771669a:1:{s:15:"site/header.htm";a:6:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:3429:"[viewBag]
+==
+<!-- Nav -->
+<!--<nav id="layout-nav" class="navbar navbar-fixed-top navbar-autohide" role="navigation">-->
+<!--    <div class="container">-->
+<!--        <div class="navbar-header">-->
+<!--            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">-->
+<!--                <span class="sr-only">Toggle navigation</span>-->
+<!--                <span class="icon-bar"></span>-->
+<!--                <span class="icon-bar"></span>-->
+<!--                <span class="icon-bar"></span>-->
+<!--            </button>-->
+<!--            <a class="navbar-brand" href="{{ 'home'|page }}"><img src="{{ 'assets/images/logo.png'|theme }}" height="30px" alt=""></a>-->
+<!--        </div>-->
+<!--        <div class="collapse navbar-collapse navbar-main-collapse">-->
+<!--            <ul class="nav navbar-nav">-->
+<!--                <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Basic concepts</a></li>-->
+<!--                <li class="{% if this.page.id == 'ajax' %}active{% endif %}"><a href="{{ 'ajax'|page }}">AJAX framework</a></li>-->
+<!--                <li class="{% if this.page.id == 'plugins' %}active{% endif %}"><a href="{{ 'plugins'|page }}">Plugin components</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</nav>-->
+
+<header class="header">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-autohide">
+        <div class="container">
+            <a class="navbar-nav" href="{{ 'home'|page }}"><img src="{{ 'assets/images/logo.png'|theme }}" height="20px"
+                                                                alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item {% if this.page.id == 'home' %}active{% endif %}">
+                        <a class="nav-link" href="{{ 'home'|page }}">Home</a>
+                    </li>
+                    <li class="nav-item {% if this.page.id == 'ajax' %}active{% endif %}">
+                        <a class="nav-link" href="{{ 'ajax'|page }}">Contacts</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+";s:5:"mtime";i:1593522233;s:6:"markup";s:3412:"<!-- Nav -->
+<!--<nav id="layout-nav" class="navbar navbar-fixed-top navbar-autohide" role="navigation">-->
+<!--    <div class="container">-->
+<!--        <div class="navbar-header">-->
+<!--            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">-->
+<!--                <span class="sr-only">Toggle navigation</span>-->
+<!--                <span class="icon-bar"></span>-->
+<!--                <span class="icon-bar"></span>-->
+<!--                <span class="icon-bar"></span>-->
+<!--            </button>-->
+<!--            <a class="navbar-brand" href="{{ 'home'|page }}"><img src="{{ 'assets/images/logo.png'|theme }}" height="30px" alt=""></a>-->
+<!--        </div>-->
+<!--        <div class="collapse navbar-collapse navbar-main-collapse">-->
+<!--            <ul class="nav navbar-nav">-->
+<!--                <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Basic concepts</a></li>-->
+<!--                <li class="{% if this.page.id == 'ajax' %}active{% endif %}"><a href="{{ 'ajax'|page }}">AJAX framework</a></li>-->
+<!--                <li class="{% if this.page.id == 'plugins' %}active{% endif %}"><a href="{{ 'plugins'|page }}">Plugin components</a></li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</nav>-->
+
+<header class="header">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-autohide">
+        <div class="container">
+            <a class="navbar-nav" href="{{ 'home'|page }}"><img src="{{ 'assets/images/logo.png'|theme }}" height="20px"
+                                                                alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item {% if this.page.id == 'home' %}active{% endif %}">
+                        <a class="nav-link" href="{{ 'home'|page }}">Home</a>
+                    </li>
+                    <li class="nav-item {% if this.page.id == 'ajax' %}active{% endif %}">
+                        <a class="nav-link" href="{{ 'ajax'|page }}">Contacts</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>";s:4:"code";N;s:7:"viewBag";a:0:{}}}

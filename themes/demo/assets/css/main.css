@@ -1,0 +1,406 @@
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 5px;
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+
+@font-face {
+    font-family: 'Euclid Flex';
+    src: url('/themes/demo/assets/fonts/EuclidFlex-UltraLight.eot');
+    src: local('Euclid Flex UltraLight'), local('/themes/demo/assets/fonts/EuclidFlex-UltraLight'),
+    url('/themes/demo/assets/fonts/EuclidFlex-UltraLight.eot?#iefix') format('embedded-opentype'),
+    url('/themes/demo/assets/fonts/EuclidFlex-UltraLight.woff2') format('woff2'),
+    url('/themes/demo/assets/fonts/EuclidFlex-UltraLight.woff') format('woff'),
+    url('/themes/demo/assets/fonts/EuclidFlex-UltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclid Flex';
+    src: url('/themes/demo/assets/fonts/EuclidFlex-Light.eot');
+    src: local('Euclid Flex Light'), local('/themes/demo/assets/fonts/EuclidFlex-Light'),
+    url('/themes/demo/assets/fonts/EuclidFlex-Light.eot?#iefix') format('embedded-opentype'),
+    url('/themes/demo/assets/fonts/EuclidFlex-Light.woff2') format('woff2'),
+    url('/themes/demo/assets/fonts/EuclidFlex-Light.woff') format('woff'),
+    url('/themes/demo/assets/fonts/EuclidFlex-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclid Flex';
+    src: url('/themes/demo/assets/fonts/EuclidFlex-Regular.eot');
+    src: local('Euclid Flex Regular'), local('/themes/demo/assets/fonts/EuclidFlex-Regular'),
+    url('/themes/demo/assets/fonts/EuclidFlex-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/themes/demo/assets/fonts/EuclidFlex-Regular.woff2') format('woff2'),
+    url('/themes/demo/assets/fonts/EuclidFlex-Regular.woff') format('woff'),
+    url('/themes/demo/assets/fonts/EuclidFlex-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Euclid Flex';
+    src: url('/themes/demo/assets/fonts/EuclidFlex-SemiBold.eot');
+    src: local('Euclid Flex SemiBold'), local('/themes/demo/assets/fonts/EuclidFlex-SemiBold'),
+    url('/themes/demo/assets/fonts/EuclidFlex-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('/themes/demo/assets/fonts/EuclidFlex-SemiBold.woff2') format('woff2'),
+    url('/themes/demo/assets/fonts/EuclidFlex-SemiBold.woff') format('woff'),
+    url('/themes/demo/assets/fonts/EuclidFlex-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'Euclid Flex';
+    src: url('/themes/demo/assets/fonts/EuclidFlex-Bold.eot');
+    src: local('Euclid Flex Bold'), local('/themes/demo/assets/fonts/EuclidFlex-Bold'),
+    url('/themes/demo/assets/fonts/EuclidFlex-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/themes/demo/assets/fonts/EuclidFlex-Bold.woff2') format('woff2'),
+    url('/themes/demo/assets/fonts/EuclidFlex-Bold.woff') format('woff'),
+    url('/themes/demo/assets/fonts/EuclidFlex-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclid Flex';
+    src: url('/themes/demo/assets/fonts/EuclidFlex-Thin.eot');
+    src: local('Euclid Flex Thin'), local('/themes/demo/assets/fonts/EuclidFlex-Thin'),
+    url('/themes/demo/assets/fonts/EuclidFlex-Thin.eot?#iefix') format('embedded-opentype'),
+    url('/themes/demo/assets/fonts/EuclidFlex-Thin.woff2') format('woff2'),
+    url('/themes/demo/assets/fonts/EuclidFlex-Thin.woff') format('woff'),
+    url('/themes/demo/assets/fonts/EuclidFlex-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euclid Flex';
+    src: url('/themes/demo/assets/fonts/EuclidFlex-Medium.eot');
+    src: local('Euclid Flex Medium'), local('/themes/demo/assets/fonts/EuclidFlex-Medium'),
+    url('/themes/demo/assets/fonts/EuclidFlex-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/themes/demo/assets/fonts/EuclidFlex-Medium.woff2') format('woff2'),
+    url('/themes/demo/assets/fonts/EuclidFlex-Medium.woff') format('woff'),
+    url('/themes/demo/assets/fonts/EuclidFlex-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+.navbar-autohide {
+    background-color: white;
+    transition: transform .5s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.nav-link {
+    color: #25265e !important;
+    font-family: 'Euclid Flex';
+}
+.navbar-autohide.is-hidden {
+    transform: translateY(-72px);
+}
+
+/*<editor-fold desc="Blog">*/
+.blog__grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 5vw);
+    grid-gap: 1em;
+}
+
+.blog {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.blog__header {
+    color: black;
+    font-size: 55px;
+    font-family: 'Euclid Flex';
+    position: absolute;
+    padding-top: 70px;
+}
+
+.blog__container {
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+}
+
+/* hover styles */
+.blog__article {
+    position: relative;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+}
+
+.blog__img {
+    line-height: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.blog__img img {
+    object-fit: cover;
+    opacity: 0.2;
+}
+
+.blog__title {
+    letter-spacing: 1px;
+    display: block;
+    color: white;
+    margin: 0;
+    padding: 0.25em 0;
+    line-height: 1;
+}
+
+.blog__content {
+    padding: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.effect-target {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+}
+
+.blog__article:hover .effect-target {
+    -webkit-transform: translate3d(0, -25px, 0);
+    transform: translate3d(0, -25px, 0);
+}
+
+.blog__article:hover{
+    cursor: pointer;
+}
+.blog__title span {
+    font-weight: 800;
+}
+
+.blog__tag {
+    display: inline-block;
+    font-size: .5em;
+    padding: .5em;
+    background: #fff;
+    color: #000;
+}
+
+.blog__article:hover .effect-image{
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.blog__article:hover .blog__title {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+.grid-1 {
+    grid-column: 1 / 5;
+    grid-row: 1 / 5;
+}
+
+.grid-2 {
+    grid-column: 5/ 9;
+    grid-row: 1 / 3;
+}
+
+.grid-4 {
+    grid-column: 1 / 3;
+    grid-row:  5 / 7;
+}
+
+.grid-3 {
+    grid-column: 5 / 9;
+    grid-row:  3 / 5;
+}
+
+.grid-5 {
+    grid-column: 3 / 7;
+    grid-row: 5 / 7;
+}
+
+.grid-6 {
+    grid-column: 7 / 9;
+    grid-row: 5 / 7;
+}
+
+.effect-image {
+    max-width: none;
+    width: -webkit-calc(100% + 40px);
+    width: calc(100% + 40px);
+    height: 100%;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    -webkit-transform: translate3d(-40px,0, 0);
+    transform: translate3d(-40px,0,0);
+}
+
+/* Animation */
+
+.waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+}
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+}
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px,0,0);
+    }
+    100% {
+        transform: translate3d(85px,0,0);
+    }
+}
+/*</editor-fold>*/
+
+/*Main content*/
+.main_content {
+    height: 100vh;
+}
+.main_content__relative {
+    position: relative;
+}
+.main_content__img {
+    filter: brightness(49%);
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main_content__title {
+    z-index: 2;
+    position: absolute;
+    top: calc(100vh - 70%);
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    font-size: 75px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 100;
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slick-prev  {
+    background-image: url("/themes/demo/assets/svg/chevron-compact-left.svg");
+    background-repeat: no-repeat;
+    background-size: 5rem 5rem;
+    fill: white;
+    padding: 55px;
+}
+
+.slick-next  {
+    background-image: url("/themes/demo/assets/svg/chevron-compact-right.svg");
+    background-repeat: no-repeat;
+    background-size: 5rem 5rem;
+    fill: red;
+    padding: 55px;
+}
+
+.slick-next:hover  {
+    
+}
+
+.glyphicon-chevron-left {
+    fill: #c63e26;
+    background-image: url("/themes/demo/assets/svg/chevron-compact-left.svg");
+    background-repeat: no-repeat;
+    background-size: 5rem 5rem;
+    padding: 55px;
+}
+#layout-content {
+    position: relative;
+}
+
+/*End main content*/
+
+.main_content__new {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    position: relative;
+    height: 100vh;
+}
+
+.main_content__new__title {
+    font-size: 36px;
+    line-height: 54px;
+    color: #25265e;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.main_content__new__button{
+    background-color: #25265e;
+    padding: 0.5rem;
+    border-radius: 0.1rem;
+}
+
+.main_content__new__button a {
+    color: white;
+}
+.main_content__new__description {
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(37,38,94,0.7);
+    width: 550px;
+    overflow: hidden;
+    font-weight: 400;
+}
+
+.main_content__new__img {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.icon__insta {
+    content: url("/themes/demo/assets/images/insta.svg");
+    height: 25px;
+}

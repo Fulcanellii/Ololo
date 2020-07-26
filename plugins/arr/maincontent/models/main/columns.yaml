@@ -1,0 +1,7 @@
+columns:
+    title:
+        label: Заголовок
+        type: text
+    created_at:
+        label: 'Дата создания'
+        type: date

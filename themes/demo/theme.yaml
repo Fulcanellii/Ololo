@@ -1,0 +1,31 @@
+name: Ololo
+description: 'Lorem ipsum'
+author: Array
+homepage: ''
+code: ''
+form:
+  fields:
+    phone:
+      label: Телефон
+      span: auto
+    email:
+      label: E-mail
+      span: auto
+    instagram:
+      label: Instagram
+      span: auto
+    facebook:
+      label: Facebook
+      span: auto
+    twitter:
+      label: Twitter
+      span: auto
+    image:
+      label: 'Главное изображение'
+      mode: image
+      useCaption: true
+      thumbOptions:
+        mode: crop
+        extension: auto
+      span: auto
+      type: fileupload
